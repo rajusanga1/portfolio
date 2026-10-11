@@ -1122,5 +1122,35 @@ footer {
     .btn {
         width: 100%;
     }
+    /* Profile Photo */
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.profile-photo img {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 20px;
+    border: 3px solid #00d9ff;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .profile-photo img {
+        width: 220px;
+        height: 260px;
+    }
+}
 
 }
